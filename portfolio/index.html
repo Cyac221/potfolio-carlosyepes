@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portafolio de Carlos — Data/Marketing Analytics" />
+  <title>Portafolio | Carlos</title>
+
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+  <!-- Skip link: accesibilidad pro -->
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <header class="header">
+    <nav class="nav container" aria-label="Navegación principal">
+      <a class="logo" href="#">Carlos<span>.</span></a>
+
+      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+        ☰
+        <span class="sr-only">Abrir menú</span>
+      </button>
+
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <p class="badge">Data • Marketing Analytics • AWS</p>
+          <h1>Hola, soy <span class="accent">Carlos</span>.</h1>
+          <p class="lead">
+            Construyo análisis, dashboards y productos de datos que convierten caos en decisiones.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn" href="#projects">Ver proyectos</a>
+            <a class="btn btn--ghost" href="#contact">Hablemos</a>
+          </div>
+
+          <ul class="hero__links">
+            <li><a href="#" target="_blank" rel="noreferrer">GitHub</a></li>
+            <li><a href="#" target="_blank" rel="noreferrer">LinkedIn</a></li>
+            <li><a href="#" target="_blank" rel="noreferrer">CV</a></li>
+          </ul>
+        </div>
+
+        <div class="hero__card" aria-hidden="true">
+          <!-- Placeholder visual (puede ser foto luego) -->
+          <div class="avatar"></div>
+          <div class="mini-stats">
+            <div class="stat"><span>+X</span><small>proyectos</small></div>
+            <div class="stat"><span>+Y</span><small>dashboards</small></div>
+            <div class="stat"><span>+Z</span><small>casos</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>Sobre mí</h2>
+        <p>
+          Aquí pones tu resumen: qué haces, en qué eres fuerte, qué problemas resuelves y tu enfoque.
+        </p>
+
+        <div class="about__grid">
+          <div class="card">
+            <h3>Lo que hago</h3>
+            <p>Segmentación, analítica de usuarios, funnels, LTV, automatización y dashboards.</p>
+          </div>
+          <div class="card">
+            <h3>Con qué</h3>
+            <p>Python, SQL (Athena/Presto), AWS (S3/Glue), Power BI/Tableau, Git.</p>
+          </div>
+          <div class="card">
+            <h3>Cómo pienso</h3>
+            <p>Hipótesis → datos → experimento → decisión. Cero humo, máximo aprendizaje.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2>Proyectos</h2>
+          <div class="filters">
+            <button class="chip is-active" data-filter="all">Todos</button>
+            <button class="chip" data-filter="data">Data</button>
+            <button class="chip" data-filter="dashboard">Dashboards</button>
+            <button class="chip" data-filter="ml">ML</button>
+          </div>
+        </div>
+
+        <div class="grid" id="projectsGrid">
+          <!-- Proyecto template -->
+          <article class="project card" data-tags="data dashboard">
+            <h3>Proyecto 1</h3>
+            <p>Qué problema resolviste, cómo lo mediste, y cuál fue el impacto.</p>
+            <ul class="tags">
+              <li>SQL</li><li>AWS</li><li>Power BI</li>
+            </ul>
+            <div class="actions">
+              <a class="btn btn--small" href="#" target="_blank" rel="noreferrer">Demo</a>
+              <a class="btn btn--small btn--ghost" href="#" target="_blank" rel="noreferrer">Código</a>
+            </div>
+          </article>
+
+          <article class="project card" data-tags="ml data">
+            <h3>Proyecto 2</h3>
+            <p>Descripción corta y concreta (menos poesía, más evidencia).</p>
+            <ul class="tags">
+              <li>Python</li><li>Pandas</li><li>Modelado</li>
+            </ul>
+            <div class="actions">
+              <a class="btn btn--small" href="#" target="_blank" rel="noreferrer">Demo</a>
+              <a class="btn btn--small btn--ghost" href="#" target="_blank" rel="noreferrer">Código</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills">
+          <div class="card">
+            <h3>Data</h3>
+            <p>SQL, Python, ETL, métricas, cohortes, segmentación.</p>
+          </div>
+          <div class="card">
+            <h3>Cloud</h3>
+            <p>AWS S3, Glue, Athena, pipelines.</p>
+          </div>
+          <div class="card">
+            <h3>Visualización</h3>
+            <p>Power BI, Tableau, storytelling.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contacto</h2>
+
+        <form class="form" id="contactForm">
+          <label>
+            Nombre
+            <input type="text" name="name" required />
+          </label>
+
+          <label>
+            Email
+            <input type="email" name="email" required />
+          </label>
+
+          <label>
+            Mensaje
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+
+          <button class="btn" type="submit">Enviar</button>
+          <p class="form__hint" id="formHint" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <p>© <span id="year"></span> Carlos. Hecho con café y causalidad 🧠</p>
+      <a href="#main">Volver arriba</a>
+    </div>
+  </footer>
+
+  <script src="/js/main.js" defer></script>
+</body>
+</html>
